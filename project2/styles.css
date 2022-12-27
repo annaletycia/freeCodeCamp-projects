@@ -56,7 +56,7 @@ h2 {
 }
 
 .item p {
-    display: inline-block;
+    display: inline-block; /*colocando elementos 'block' na mesma linha*/
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 18px;
