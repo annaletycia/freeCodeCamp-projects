@@ -15,11 +15,12 @@
     </header>
     <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
         <fieldset>
-            <label for="name">Name: <input name="name" id="name" type="text" placeholder="Enter your name" /></label>
-            <label for="email">Email: <input name="email" id="email" type="email"
+            <label id="name-label" for="name">Name: <input name="name" id="name" type="text" required
+                    placeholder="Enter your name" /></label>
+            <label id="email-label" for="email">Email: <input name="email" id="email" type="email" required
                     placeholder="Enter your email" /></label>
-            <label for="number">Age: <input name="number" id="number" type="number" placeholder="Enter your age"
-                    min="13" max="120" />
+            <label id="number-label" for="number">Age: <input name="number" id="number" type="number"
+                    placeholder="Enter your age" min="13" max="120" />
                 <label for="dropdown">Gender:
                     <select id="dropdown" name="dropdown">
                         <option value="">Select</option>
@@ -31,21 +32,24 @@
         <fieldset>
             </label>
             <p>What is your occupation?</p>
-            <label for="student"> <input type="radio" class="inline" name="occupation" id="student" />Student</label>
-            <label for="professor"><input type="radio" class="inline" name="occupation"
-                    id="professor" />Professor</label>
+            <label for="student"> <input type="radio" class="inline" name="occupation" id="student"
+                    value="student" /> Student</label>
+            <label for="professor"><input type="radio" class="inline" name="occupation" id="professor"
+                    value="professor" /> Professor</label>
         </fieldset>
         <fieldset>
             <p>What would you like to see improved?</p>
             <label for="improvements">
-                <input id="improvements" name="improvements" type="checkbox" value="videos" class="inline" /> Videos
-                <input id="improvements" name="improvements" type="checkbox" value="design" class="inline" /> Design
+                <input id="improvements" name="video-improvements" type="checkbox" value="videos" class="inline" /> Videos
+                <input id="improvements" name="design-improvements" type="checkbox" value="design" class="inline" /> Design
+                <input id="improvements" name="interface-improvements" type="checkbox" value="interface" class="inline" /> Interface
+                <input id="improvements" name="update-improvements" type="checkbox" value="updates" class="inline" /> Updates
             </label>
-            <fieldset>
+        </fieldset>
+        <fieldset>
                 <label for="comments">Additional Comments:
                     <textarea id="comments" name="comments" rows="3" cols="20">
-      </textarea>
-            </fieldset>
+                    </textarea>
         </fieldset>
         <input id="submit" type="submit" value="Submit" />
     </form>
